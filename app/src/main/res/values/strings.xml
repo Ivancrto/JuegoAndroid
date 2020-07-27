@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Practica1</string>
+    <string name="salir">salir</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="nickname">nickname</string>
+    <string name="crear">Crear</string>
+    <string name="color_fondo">Color Fondo</string>
+    <string name="color_texto">Color Texto</string>
+    <string name="tama_o_texto">Tamaño Texto</string>
+
+    <string name="contrase_a">Contraseña</string>
+    <string name="nombre">Nombre</string>
+    <string name="nick">Nick</string>
+
+    <string name="crear_usuario">Crear usuario</string>
+    <string name="pregunta_6">Pregunta 6</string>
+
+</resources>

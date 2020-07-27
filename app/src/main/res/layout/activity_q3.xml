@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fondoQ3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5E0E9"
+    tools:context=".Q3">
+
+    <ToggleButton
+        android:id="@+id/tb3"
+        android:layout_width="67dp"
+        android:layout_height="47dp"
+        android:checked="true"
+        android:fadingEdge="horizontal|vertical"
+        android:foreground="@android:drawable/ic_lock_silent_mode_off"
+        android:foregroundGravity="left|center|center_horizontal"
+        android:freezesText="false"
+        android:gravity="center|right"
+        android:lineSpacingExtra="8sp"
+        android:linksClickable="false"
+        android:longClickable="false"
+        android:onClick="Play_StopMusic"
+        android:orientation="horizontal"
+        android:textIsSelectable="false"
+        android:textOff="OFF"
+        android:textOn="ON"
+        app:layout_constraintBottom_toTopOf="@+id/txtPreg3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtPreg3"
+        android:layout_width="346dp"
+        android:layout_height="84dp"
+        android:lineSpacingExtra="10sp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:fontFamily="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewchat"
+        android:layout_width="291dp"
+        android:layout_height="238dp"
+        android:background="@android:drawable/editbox_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.452" />
+
+    <TextView
+        android:id="@+id/tpunt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PUNTUACION"
+        app:layout_constraintBottom_toTopOf="@+id/btnExit3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.299"
+        app:layout_constraintStart_toStartOf="@+id/recyclerViewchat"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewchat" />
+
+    <TextView
+        android:id="@+id/txtN3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btnNext3"
+        app:layout_constraintEnd_toEndOf="@+id/recyclerViewchat"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toEndOf="@+id/tpunt3"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewchat" />
+
+    <Button
+        android:id="@+id/btnNext3"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/btn_default_small"
+        android:text="Siguiente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnExit3"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/btn_default_small"
+        android:text="salir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
